@@ -1,0 +1,13 @@
+packages
+node_modules
+.vs
+*.sln
+ApplicationInsights.config
+bin
+debug
+obj
+PublishProfiles
+.vscode
+install
+semantic
+canvas

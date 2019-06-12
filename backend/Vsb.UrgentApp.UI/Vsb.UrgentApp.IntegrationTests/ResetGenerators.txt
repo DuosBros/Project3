@@ -1,0 +1,7 @@
+set generator GEN_PATIENT_ID TO 0
+set generator GEN_ROOM_ID TO 0
+set generator GEN_TAGEVENTTYPE_ID TO 0
+set generator GEN_TAGEVENT_ID TO 0
+set generator GEN_TAGLOCATION_ID TO 0
+set generator GEN_TAGREGISTRATION_ID TO 0
+set generator GEN_TAG_ID TO 0

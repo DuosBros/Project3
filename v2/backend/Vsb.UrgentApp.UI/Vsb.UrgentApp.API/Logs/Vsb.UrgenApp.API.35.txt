@@ -1,0 +1,1681 @@
+2019-02-06 20:35:17.1146|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:35:22.2086|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:35:22.4047|ERROR|Vsb.UrgentApp.API.TokenValidationHandler|Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '{"alg":"HS256","typ":"JWT"}.{"unique_name":"admin","nbf":1548880560,"exp":1548966960,"iat":1548880560,"iss":"http://localhost:1467","aud":"http://localhost:1467"}'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Vsb.UrgentApp.API.TokenValidationHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) in C:\Users\atran1\Desktop\work\cak3\rtls\sw\src\SesterskaAplikace\v2\backend\Vsb.UrgentApp.UI\Vsb.UrgentApp.API\TokenValidationHandler.cs:line 71
+2019-02-06 20:36:57.3728|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:36:57.4098|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:36:57.4368|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{"name":"admin","password":"admin","showEmail":false}
+2019-02-06 20:37:00.1158|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNTQ5NDgxODIwLCJleHAiOjE1NDk1NjgyMjAsImlhdCI6MTU0OTQ4MTgyMCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDoxNDY3IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoxNDY3In0.f4hBhMxGulUwLYdXHrSQZNU4dF6lE2xkpPt8ONBp6xk"
+2019-02-06 20:37:00.2398|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:00.3068|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:01.2418|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 77,
+    "cardId": 261341,
+    "socialSecurityNumber": "",
+    "firstName": "test848916",
+    "middleName": "dva",
+    "lastName": "normal",
+    "birthDate": "01.01.0001 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 11,
+      "hwKey": 2250,
+      "name": "HW Tag 202",
+      "note": "Tag 202",
+      "battery": 1,
+      "lastSeen": "2019-02-06T12:53:13Z"
+    }
+  }
+]
+2019-02-06 20:37:01.2969|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:01.3858|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:01.7698|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 67,
+    "tag": {
+      "id": 11,
+      "hwKey": 2250,
+      "name": "HW Tag 202",
+      "note": "Tag 202",
+      "battery": 1,
+      "lastSeen": "2019-02-06T12:53:13Z"
+    },
+    "patient": {
+      "id": 77,
+      "cardId": 261341,
+      "socialSecurityNumber": "",
+      "firstName": "test848916",
+      "middleName": "dva",
+      "lastName": "normal",
+      "birthDate": "01.01.0001 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 11,
+        "hwKey": 2250,
+        "name": "HW Tag 202",
+        "note": "Tag 202",
+        "battery": 1,
+        "lastSeen": "2019-02-06T12:53:13Z"
+      }
+    },
+    "created": "2019-02-06T12:41:17Z"
+  }
+]
+2019-02-06 20:37:01.8068|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:01.8548|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:01.9118|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 9,
+    "hwKey": 2251,
+    "name": "HW Tag 203",
+    "note": "Tag 203",
+    "battery": 1,
+    "lastSeen": "2019-01-29T13:07:48Z"
+  },
+  {
+    "id": 10,
+    "hwKey": 2249,
+    "name": "HW Tag 201",
+    "note": "Tag 201",
+    "battery": 1,
+    "lastSeen": "2019-02-06T12:59:26Z"
+  },
+  {
+    "id": 11,
+    "hwKey": 2250,
+    "name": "HW Tag 202",
+    "note": "Tag 202",
+    "battery": 1,
+    "lastSeen": "2019-02-06T12:53:13Z"
+  },
+  {
+    "id": 3,
+    "hwKey": 2049,
+    "name": "HW Tag 1",
+    "note": "Tag 1",
+    "battery": 1,
+    "lastSeen": "2019-01-29T14:30:07Z"
+  },
+  {
+    "id": 4,
+    "hwKey": 2050,
+    "name": "HW Tag 2",
+    "note": "Tag 2",
+    "battery": 1,
+    "lastSeen": "2018-09-07T10:18:14Z"
+  },
+  {
+    "id": 7,
+    "hwKey": 2051,
+    "name": "HW Tag 3",
+    "note": "Tag 3",
+    "battery": 1,
+    "lastSeen": "2018-06-25T10:28:40Z"
+  },
+  {
+    "id": 8,
+    "hwKey": 2052,
+    "name": "HW Tag 4",
+    "note": "Tag 4",
+    "battery": 1,
+    "lastSeen": "2018-09-07T18:01:23Z"
+  }
+]
+2019-02-06 20:37:01.9458|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:02.0788|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:02.1628|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 2,
+    "hwKey": 65406,
+    "name": "Tlaèítko 5",
+    "note": "5 - Pøedání pacienta na vzdáleném oddìlení (tlaèítko offline, mimo dosah sítì)"
+  },
+  {
+    "id": 8,
+    "hwKey": 65391,
+    "name": "Tlaèítko 7",
+    "note": "7 - Nemá funkci"
+  },
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "8 - Nemá funkci"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 5,
+    "hwKey": 65405,
+    "name": "Tlaèítko 2",
+    "note": "2 - Stanovení pracovní diagnózy"
+  },
+  {
+    "id": 6,
+    "hwKey": 65399,
+    "name": "Tlaèítko 3",
+    "note": "3 - Konec vyšetøení (ukonèení práce na pacientovi na urgentu)"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Odjezd z haly z urgentu (možnost podchytit kotvou nad dveømi)"
+  },
+  {
+    "id": 9,
+    "hwKey": 65403,
+    "name": "Tlaèítko 6",
+    "note": "6 - Pøíjezd zpìt do haly (Postel s tagem, zaznamená se kotvou pøi zaparkování u zápisu)."
+  }
+]
+2019-02-06 20:37:02.3888|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:02.4028|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:02.5088|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:02.7678|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 77,
+    "cardId": 261341,
+    "socialSecurityNumber": "",
+    "firstName": "test848916",
+    "middleName": "dva",
+    "lastName": "normal",
+    "birthDate": "01.01.0001 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 11,
+      "hwKey": 2250,
+      "name": "HW Tag 202",
+      "note": "Tag 202",
+      "battery": 1,
+      "lastSeen": "2019-02-06T12:53:13Z"
+    }
+  }
+]
+2019-02-06 20:37:02.8759|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:02.9198|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:37:08.6618|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 12610,
+    "created": "2019-02-06T12:49:49Z",
+    "modified": "2019-02-06T12:49:49Z",
+    "tag": {
+      "id": 11,
+      "hwKey": 2250,
+      "name": "HW Tag 202",
+      "note": "Tag 202",
+      "battery": 1,
+      "lastSeen": "2019-02-06T12:53:13Z"
+    },
+    "patient": {
+      "id": 77,
+      "cardId": 261341,
+      "socialSecurityNumber": "",
+      "firstName": "test848916",
+      "middleName": "dva",
+      "lastName": "normal",
+      "birthDate": "01.01.0001 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 11,
+        "hwKey": 2250,
+        "name": "HW Tag 202",
+        "note": "Tag 202",
+        "battery": 1,
+        "lastSeen": "2019-02-06T12:53:13Z"
+      }
+    },
+    "room": {
+      "id": 20,
+      "name": "BOX1",
+      "note": "Kuchyòka"
+    }
+  }
+]
+2019-02-06 20:39:19.6894|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:39:19.7524|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:40:34.7512|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:40:34.7512|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:40:34.9682|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:40:35.0411|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:40:35.3191|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-02-06 20:43:18.2410|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:43:18.2845|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:43:21.9846|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:43:21.9846|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:43:23.5275|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-02-06 20:44:39.8917|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:44:39.9037|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:44:40.3187|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:44:40.3187|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:44:40.3957|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-02-06 20:46:40.4863|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:46:40.5113|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:46:40.9643|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:46:40.9643|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:46:41.0183|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-02-06 20:47:27.8486|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:47:27.9046|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:47:27.9856|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-02-06 20:50:48.2665|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:50:48.2665|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:50:52.3612|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:50:52.3772|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:50:55.3113|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 1,
+    "cardId": 11231546546,
+    "socialSecurityNumber": "170922/0018",
+    "firstName": "Ola",
+    "middleName": "",
+    "lastName": "Herluf",
+    "birthDate": "05.03.2003 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    }
+  },
+  {
+    "id": 2,
+    "cardId": 15615516,
+    "socialSecurityNumber": "975822/6555",
+    "firstName": "Hubert",
+    "middleName": "Karol",
+    "lastName": "Jan",
+    "birthDate": "05.03.2004 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 2,
+      "hwKey": 456,
+      "name": "TAG02",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:01:00Z"
+    }
+  },
+  {
+    "id": 4,
+    "cardId": 13543843,
+    "socialSecurityNumber": "930904/5615",
+    "firstName": "Admir",
+    "middleName": "Elisabet",
+    "lastName": "Anders",
+    "birthDate": "05.03.2006 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 4,
+      "hwKey": 1433,
+      "name": "TAG04",
+      "note": "not working",
+      "battery": 0,
+      "lastSeen": "2018-01-02T20:00:00Z"
+    }
+  },
+  {
+    "id": 5,
+    "cardId": 48689999,
+    "socialSecurityNumber": "916215/3770",
+    "firstName": "Mikael",
+    "middleName": "Rikard",
+    "lastName": "Henric",
+    "birthDate": "05.03.2007 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    }
+  },
+  {
+    "id": 7,
+    "cardId": 1615646,
+    "socialSecurityNumber": "916215/3772",
+    "firstName": "Stefan",
+    "middleName": "Mikael",
+    "lastName": "Patrik",
+    "birthDate": "05.03.2009 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 3,
+      "hwKey": 6413,
+      "name": "TAG03",
+      "note": "not working",
+      "battery": 0,
+      "lastSeen": "2018-01-01T20:00:00Z"
+    }
+  },
+  {
+    "id": 8,
+    "cardId": 48672446,
+    "socialSecurityNumber": "930904/5619",
+    "firstName": "Nicklas",
+    "middleName": "Jan",
+    "lastName": "Anders",
+    "birthDate": "05.03.2010 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    }
+  },
+  {
+    "id": 10,
+    "cardId": 486134884,
+    "socialSecurityNumber": "985824/6409",
+    "firstName": "Andrej",
+    "middleName": "",
+    "lastName": "Pasi",
+    "birthDate": "05.03.2012 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    }
+  },
+  {
+    "id": 11,
+    "cardId": 484864684,
+    "socialSecurityNumber": "985824/6409",
+    "firstName": "Andrej",
+    "middleName": "",
+    "lastName": "Evzen",
+    "birthDate": "05.03.2008 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 11,
+      "hwKey": 6974,
+      "name": "TAG11",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T15:00:00Z"
+    }
+  },
+  {
+    "id": 12,
+    "cardId": 521313,
+    "socialSecurityNumber": "985111/6119",
+    "firstName": "Oida",
+    "middleName": "",
+    "lastName": "Hojta",
+    "birthDate": "05.12.1988 0:00:00",
+    "deleted": null,
+    "tag": null
+  }
+]
+2019-02-06 20:50:55.7604|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:50:55.8624|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:50:57.9825|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 10,
+    "created": "2018-09-29T09:30:04Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": {
+      "id": 1,
+      "cardId": 11231546546,
+      "socialSecurityNumber": "170922/0018",
+      "firstName": "Ola",
+      "middleName": "",
+      "lastName": "Herluf",
+      "birthDate": "05.03.2003 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 1,
+        "hwKey": 1234,
+        "name": "TAG01",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T20:00:00Z"
+      }
+    },
+    "room": {
+      "id": 5,
+      "name": "Room4",
+      "note": "Note5"
+    }
+  },
+  {
+    "id": 12,
+    "created": "2018-09-29T09:30:06Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 2,
+      "hwKey": 456,
+      "name": "TAG02",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:01:00Z"
+    },
+    "patient": {
+      "id": 2,
+      "cardId": 15615516,
+      "socialSecurityNumber": "975822/6555",
+      "firstName": "Hubert",
+      "middleName": "Karol",
+      "lastName": "Jan",
+      "birthDate": "05.03.2004 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 2,
+        "hwKey": 456,
+        "name": "TAG02",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T20:01:00Z"
+      }
+    },
+    "room": {
+      "id": 2,
+      "name": "Room1",
+      "note": "Note2"
+    }
+  },
+  {
+    "id": 16,
+    "created": "2018-09-29T09:30:10Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 4,
+      "hwKey": 1433,
+      "name": "TAG04",
+      "note": "not working",
+      "battery": 0,
+      "lastSeen": "2018-01-02T20:00:00Z"
+    },
+    "patient": {
+      "id": 4,
+      "cardId": 13543843,
+      "socialSecurityNumber": "930904/5615",
+      "firstName": "Admir",
+      "middleName": "Elisabet",
+      "lastName": "Anders",
+      "birthDate": "05.03.2006 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 4,
+        "hwKey": 1433,
+        "name": "TAG04",
+        "note": "not working",
+        "battery": 0,
+        "lastSeen": "2018-01-02T20:00:00Z"
+      }
+    },
+    "room": {
+      "id": 1,
+      "name": "Lobby",
+      "note": "Note1"
+    }
+  },
+  {
+    "id": 19,
+    "created": "2018-09-29T09:30:13Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    },
+    "patient": {
+      "id": 5,
+      "cardId": 48689999,
+      "socialSecurityNumber": "916215/3770",
+      "firstName": "Mikael",
+      "middleName": "Rikard",
+      "lastName": "Henric",
+      "birthDate": "05.03.2007 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 5,
+        "hwKey": 1111,
+        "name": "TAG05",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T20:02:00Z"
+      }
+    },
+    "room": {
+      "id": 3,
+      "name": "Room2",
+      "note": "Note3"
+    }
+  },
+  {
+    "id": 22,
+    "created": "2018-09-29T09:30:17Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    },
+    "patient": {
+      "id": 8,
+      "cardId": 48672446,
+      "socialSecurityNumber": "930904/5619",
+      "firstName": "Nicklas",
+      "middleName": "Jan",
+      "lastName": "Anders",
+      "birthDate": "05.03.2010 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 8,
+        "hwKey": 2154,
+        "name": "TAG08",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T18:00:00Z"
+      }
+    },
+    "room": {
+      "id": 2,
+      "name": "Room1",
+      "note": "Note2"
+    }
+  },
+  {
+    "id": 24,
+    "created": "2018-09-29T09:30:19Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    },
+    "patient": {
+      "id": 10,
+      "cardId": 486134884,
+      "socialSecurityNumber": "985824/6409",
+      "firstName": "Andrej",
+      "middleName": "",
+      "lastName": "Pasi",
+      "birthDate": "05.03.2012 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 10,
+        "hwKey": 5468,
+        "name": "TAG10",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T16:00:00Z"
+      }
+    },
+    "room": {
+      "id": 1,
+      "name": "Lobby",
+      "note": "Note1"
+    }
+  }
+]
+2019-02-06 20:51:01.3781|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:51:01.5003|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:51:31.6414|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:51:31.7098|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:51:33.8603|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:51:33.9043|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.0693|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.0733|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.1473|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.1806|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.3603|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 1,
+    "hwKey": 1234,
+    "name": "TAG01",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T20:00:00Z"
+  },
+  {
+    "id": 2,
+    "hwKey": 456,
+    "name": "TAG02",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T20:01:00Z"
+  },
+  {
+    "id": 3,
+    "hwKey": 6413,
+    "name": "TAG03",
+    "note": "not working",
+    "battery": 0,
+    "lastSeen": "2018-01-01T20:00:00Z"
+  },
+  {
+    "id": 4,
+    "hwKey": 1433,
+    "name": "TAG04",
+    "note": "not working",
+    "battery": 0,
+    "lastSeen": "2018-01-02T20:00:00Z"
+  },
+  {
+    "id": 5,
+    "hwKey": 1111,
+    "name": "TAG05",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T20:02:00Z"
+  },
+  {
+    "id": 6,
+    "hwKey": 3654,
+    "name": "TAG06",
+    "note": "not working",
+    "battery": 0,
+    "lastSeen": "2018-01-03T20:00:00Z"
+  },
+  {
+    "id": 7,
+    "hwKey": 9946,
+    "name": "TAG07",
+    "note": "not working",
+    "battery": 0,
+    "lastSeen": "2018-01-20T20:00:00Z"
+  },
+  {
+    "id": 8,
+    "hwKey": 2154,
+    "name": "TAG08",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T18:00:00Z"
+  },
+  {
+    "id": 9,
+    "hwKey": 9844,
+    "name": "TAG09",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T17:00:00Z"
+  },
+  {
+    "id": 10,
+    "hwKey": 5468,
+    "name": "TAG10",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T16:00:00Z"
+  },
+  {
+    "id": 11,
+    "hwKey": 6974,
+    "name": "TAG11",
+    "note": null,
+    "battery": 1,
+    "lastSeen": "2018-01-24T15:00:00Z"
+  }
+]
+2019-02-06 20:52:24.4573|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.4963|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:24.7294|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 4,
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    },
+    "patient": {
+      "id": 5,
+      "cardId": 48689999,
+      "socialSecurityNumber": "916215/3770",
+      "firstName": "Mikael",
+      "middleName": "Rikard",
+      "lastName": "Henric",
+      "birthDate": "05.03.2007 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 5,
+        "hwKey": 1111,
+        "name": "TAG05",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T20:02:00Z"
+      }
+    },
+    "created": "2018-07-21T10:30:45Z"
+  },
+  {
+    "id": 5,
+    "tag": {
+      "id": 3,
+      "hwKey": 6413,
+      "name": "TAG03",
+      "note": "not working",
+      "battery": 0,
+      "lastSeen": "2018-01-01T20:00:00Z"
+    },
+    "patient": {
+      "id": 7,
+      "cardId": 1615646,
+      "socialSecurityNumber": "916215/3772",
+      "firstName": "Stefan",
+      "middleName": "Mikael",
+      "lastName": "Patrik",
+      "birthDate": "05.03.2009 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 3,
+        "hwKey": 6413,
+        "name": "TAG03",
+        "note": "not working",
+        "battery": 0,
+        "lastSeen": "2018-01-01T20:00:00Z"
+      }
+    },
+    "created": "2018-07-21T10:30:45Z"
+  },
+  {
+    "id": 6,
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    },
+    "patient": {
+      "id": 8,
+      "cardId": 48672446,
+      "socialSecurityNumber": "930904/5619",
+      "firstName": "Nicklas",
+      "middleName": "Jan",
+      "lastName": "Anders",
+      "birthDate": "05.03.2010 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 8,
+        "hwKey": 2154,
+        "name": "TAG08",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T18:00:00Z"
+      }
+    },
+    "created": "2018-08-23T10:30:45Z"
+  },
+  {
+    "id": 7,
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    },
+    "patient": {
+      "id": 10,
+      "cardId": 486134884,
+      "socialSecurityNumber": "985824/6409",
+      "firstName": "Andrej",
+      "middleName": "",
+      "lastName": "Pasi",
+      "birthDate": "05.03.2012 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 10,
+        "hwKey": 5468,
+        "name": "TAG10",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T16:00:00Z"
+      }
+    },
+    "created": "2018-03-23T10:30:45Z"
+  },
+  {
+    "id": 8,
+    "tag": {
+      "id": 11,
+      "hwKey": 6974,
+      "name": "TAG11",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T15:00:00Z"
+    },
+    "patient": {
+      "id": 11,
+      "cardId": 484864684,
+      "socialSecurityNumber": "985824/6409",
+      "firstName": "Andrej",
+      "middleName": "",
+      "lastName": "Evzen",
+      "birthDate": "05.03.2008 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 11,
+        "hwKey": 6974,
+        "name": "TAG11",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T15:00:00Z"
+      }
+    },
+    "created": "2018-02-23T10:30:45Z"
+  }
+]
+2019-02-06 20:52:28.7594|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:28.8304|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:29.1404|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 1,
+    "created": "2018-09-23T10:30:30Z",
+    "modified": "2018-09-23T10:30:30Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": {
+      "id": 1,
+      "cardId": 11231546546,
+      "socialSecurityNumber": "170922/0018",
+      "firstName": "Ola",
+      "middleName": "",
+      "lastName": "Herluf",
+      "birthDate": "05.03.2003 0:00:00",
+      "deleted": "2019-02-06T19:51:01.6032525Z",
+      "tag": null
+    },
+    "tagEventType": {
+      "id": 1,
+      "hwKey": 65406,
+      "name": "Tlacítko 1",
+      "note": "Príjem pacienta"
+    }
+  },
+  {
+    "id": 2,
+    "created": "2018-09-23T10:46:31Z",
+    "modified": "2018-09-23T10:30:31Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": {
+      "id": 1,
+      "cardId": 11231546546,
+      "socialSecurityNumber": "170922/0018",
+      "firstName": "Ola",
+      "middleName": "",
+      "lastName": "Herluf",
+      "birthDate": "05.03.2003 0:00:00",
+      "deleted": "2019-02-06T19:51:01.6032525Z",
+      "tag": null
+    },
+    "tagEventType": {
+      "id": 2,
+      "hwKey": 65391,
+      "name": "Tlacítko 2",
+      "note": "Stanovení pracovní diagnózy"
+    }
+  },
+  {
+    "id": 3,
+    "created": "2018-09-23T11:15:32Z",
+    "modified": "2018-09-23T10:30:32Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": {
+      "id": 1,
+      "cardId": 11231546546,
+      "socialSecurityNumber": "170922/0018",
+      "firstName": "Ola",
+      "middleName": "",
+      "lastName": "Herluf",
+      "birthDate": "05.03.2003 0:00:00",
+      "deleted": "2019-02-06T19:51:01.6032525Z",
+      "tag": null
+    },
+    "tagEventType": {
+      "id": 3,
+      "hwKey": 65407,
+      "name": "Tlacítko 3",
+      "note": "Konec vyšetrení"
+    }
+  },
+  {
+    "id": 4,
+    "created": "2018-09-23T10:30:33Z",
+    "modified": "2018-09-23T10:30:33Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": {
+      "id": 1,
+      "cardId": 11231546546,
+      "socialSecurityNumber": "170922/0018",
+      "firstName": "Ola",
+      "middleName": "",
+      "lastName": "Herluf",
+      "birthDate": "05.03.2003 0:00:00",
+      "deleted": "2019-02-06T19:51:01.6032525Z",
+      "tag": null
+    },
+    "tagEventType": {
+      "id": 4,
+      "hwKey": 65405,
+      "name": "Tlacítko 4",
+      "note": "Odjezd z urgentního príjmu"
+    }
+  },
+  {
+    "id": 17,
+    "created": "2018-09-23T10:30:30Z",
+    "modified": "2018-09-23T10:30:30Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": null,
+    "tagEventType": {
+      "id": 1,
+      "hwKey": 65406,
+      "name": "Tlacítko 1",
+      "note": "Príjem pacienta"
+    }
+  },
+  {
+    "id": 18,
+    "created": "2018-09-23T10:30:31Z",
+    "modified": "2018-09-23T10:30:31Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": null,
+    "tagEventType": {
+      "id": 2,
+      "hwKey": 65391,
+      "name": "Tlacítko 2",
+      "note": "Stanovení pracovní diagnózy"
+    }
+  },
+  {
+    "id": 19,
+    "created": "2018-09-23T10:30:32Z",
+    "modified": "2018-09-23T10:30:32Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": null,
+    "tagEventType": {
+      "id": 3,
+      "hwKey": 65407,
+      "name": "Tlacítko 3",
+      "note": "Konec vyšetrení"
+    }
+  },
+  {
+    "id": 20,
+    "created": "2018-09-23T10:30:33Z",
+    "modified": "2018-09-23T10:30:33Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": null,
+    "tagEventType": {
+      "id": 4,
+      "hwKey": 65405,
+      "name": "Tlacítko 4",
+      "note": "Odjezd z urgentního príjmu"
+    }
+  }
+]
+2019-02-06 20:52:33.9218|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:33.9618|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:52:33.9798|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{"cardId":"121212","firstName":"","middleName":"","lastName":"","socialSecurityNumber":""}
+2019-02-06 20:53:08.3945|DEBUG|Vsb.UrgentApp.API.Filters.HttpExceptionFilter|Rest v1: PatientPOST exception message: Object reference not set to an instance of an object.. Arguments: System.Collections.Generic.Dictionary`2[System.String,System.Object]
+2019-02-06 20:53:08.4185|ERROR|Vsb.UrgentApp.API.Filters.HttpExceptionFilter|System.NullReferenceException: Object reference not set to an instance of an object.
+   at Vsb.UrgentApp.Tasks.Patient.PatientTasks.Create(PatientDto patientDto) in C:\Users\atran1\Desktop\work\cak3\rtls\sw\src\SesterskaAplikace\v2\backend\Vsb.UrgentApp.UI\Vsb.UrgentApp.Tasks\Patient\PatientTasks.cs:line 48
+   at Vsb.UrgentApp.API.Controllers.PatientController.Post(PatientDto patient) in C:\Users\atran1\Desktop\work\cak3\rtls\sw\src\SesterskaAplikace\v2\backend\Vsb.UrgentApp.UI\Vsb.UrgentApp.API\Controllers\PatientController.cs:line 88
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2019-02-06 20:53:08.4467|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{
+  "message": "Object reference not set to an instance of an object.",
+  "timestamp": "2019-02-06 20:53:08"
+}
+2019-02-06 20:53:11.7235|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:53:11.7575|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 20:53:11.7766|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{"cardId":"121212","firstName":"","middleName":"","lastName":"","socialSecurityNumber":""}
+2019-02-06 20:58:45.3176|DEBUG|Vsb.UrgentApp.API.Filters.HttpExceptionFilter|Rest v1: PatientPOST exception message: Object reference not set to an instance of an object.. Arguments: System.Collections.Generic.Dictionary`2[System.String,System.Object]
+2019-02-06 20:58:45.3356|ERROR|Vsb.UrgentApp.API.Filters.HttpExceptionFilter|System.NullReferenceException: Object reference not set to an instance of an object.
+   at Vsb.UrgentApp.Tasks.Patient.PatientTasks.Create(PatientDto patientDto) in C:\Users\atran1\Desktop\work\cak3\rtls\sw\src\SesterskaAplikace\v2\backend\Vsb.UrgentApp.UI\Vsb.UrgentApp.Tasks\Patient\PatientTasks.cs:line 48
+   at Vsb.UrgentApp.API.Controllers.PatientController.Post(PatientDto patient) in C:\Users\atran1\Desktop\work\cak3\rtls\sw\src\SesterskaAplikace\v2\backend\Vsb.UrgentApp.UI\Vsb.UrgentApp.API\Controllers\PatientController.cs:line 88
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2019-02-06 20:58:45.3496|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{
+  "message": "Object reference not set to an instance of an object.",
+  "timestamp": "2019-02-06 20:58:45"
+}
+2019-02-06 21:02:06.9936|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:10.7929|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:11.0536|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{"cardId":"121212","firstName":"","middleName":"","lastName":"","socialSecurityNumber":""}
+2019-02-06 21:02:32.9622|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{
+  "id": 15,
+  "cardId": 121212,
+  "socialSecurityNumber": "",
+  "firstName": "",
+  "middleName": "",
+  "lastName": "",
+  "birthDate": "01.01.0001 0:00:00",
+  "deleted": null,
+  "tag": null
+}
+2019-02-06 21:02:54.8556|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:54.9586|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:54.9856|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[{"id":20,"created":"2018-09-23T10:30:33Z","modified":"2018-09-23T10:30:33Z","tag":{"id":1,"hwKey":1234,"name":"TAG01","note":null,"battery":1,"lastSeen":"2018-01-24T20:00:00Z"},"patient":{"id":15,"cardId":121212,"socialSecurityNumber":"","firstName":"","middleName":"","lastName":"","birthDate":"01.01.0001 0:00:00","deleted":null,"tag":null},"tagEventType":{"id":4,"hwKey":65405,"name":"Tlacítko 4","note":"Odjezd z urgentního príjmu"},"modified_temp":true}]
+2019-02-06 21:02:55.4781|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 20,
+    "created": "2018-09-23T10:30:33Z",
+    "modified": "2019-02-06T20:02:55.1886335Z",
+    "tag": {
+      "id": 1,
+      "hwKey": 1234,
+      "name": "TAG01",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:00:00Z"
+    },
+    "patient": {
+      "id": 15,
+      "cardId": 121212,
+      "socialSecurityNumber": "",
+      "firstName": "",
+      "middleName": "",
+      "lastName": "",
+      "birthDate": "01.01.0001 0:00:00",
+      "deleted": null,
+      "tag": null
+    },
+    "tagEventType": {
+      "id": 4,
+      "hwKey": 65405,
+      "name": "Tlacítko 4",
+      "note": "Odjezd z urgentního príjmu"
+    }
+  }
+]
+2019-02-06 21:02:56.1163|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:56.1272|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:56.2503|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:56.2652|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:57.7362|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 5,
+    "cardId": 48689999,
+    "socialSecurityNumber": "916215/3770",
+    "firstName": "Mikael",
+    "middleName": "Rikard",
+    "lastName": "Henric",
+    "birthDate": "05.03.2007 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    }
+  },
+  {
+    "id": 7,
+    "cardId": 1615646,
+    "socialSecurityNumber": "916215/3772",
+    "firstName": "Stefan",
+    "middleName": "Mikael",
+    "lastName": "Patrik",
+    "birthDate": "05.03.2009 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 3,
+      "hwKey": 6413,
+      "name": "TAG03",
+      "note": "not working",
+      "battery": 0,
+      "lastSeen": "2018-01-01T20:00:00Z"
+    }
+  },
+  {
+    "id": 8,
+    "cardId": 48672446,
+    "socialSecurityNumber": "930904/5619",
+    "firstName": "Nicklas",
+    "middleName": "Jan",
+    "lastName": "Anders",
+    "birthDate": "05.03.2010 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    }
+  },
+  {
+    "id": 10,
+    "cardId": 486134884,
+    "socialSecurityNumber": "985824/6409",
+    "firstName": "Andrej",
+    "middleName": "",
+    "lastName": "Pasi",
+    "birthDate": "05.03.2012 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    }
+  },
+  {
+    "id": 11,
+    "cardId": 484864684,
+    "socialSecurityNumber": "985824/6409",
+    "firstName": "Andrej",
+    "middleName": "",
+    "lastName": "Evzen",
+    "birthDate": "05.03.2008 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 11,
+      "hwKey": 6974,
+      "name": "TAG11",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T15:00:00Z"
+    }
+  },
+  {
+    "id": 12,
+    "cardId": 521313,
+    "socialSecurityNumber": "985111/6119",
+    "firstName": "Oida",
+    "middleName": "",
+    "lastName": "Hojta",
+    "birthDate": "05.12.1988 0:00:00",
+    "deleted": null,
+    "tag": null
+  },
+  {
+    "id": 15,
+    "cardId": 121212,
+    "socialSecurityNumber": "",
+    "firstName": "",
+    "middleName": "",
+    "lastName": "",
+    "birthDate": "01.01.0001 0:00:00",
+    "deleted": null,
+    "tag": null
+  }
+]
+2019-02-06 21:02:58.0253|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:58.0732|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:02:59.4917|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 19,
+    "created": "2018-09-29T09:30:13Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    },
+    "patient": {
+      "id": 5,
+      "cardId": 48689999,
+      "socialSecurityNumber": "916215/3770",
+      "firstName": "Mikael",
+      "middleName": "Rikard",
+      "lastName": "Henric",
+      "birthDate": "05.03.2007 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 5,
+        "hwKey": 1111,
+        "name": "TAG05",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T20:02:00Z"
+      }
+    },
+    "room": {
+      "id": 3,
+      "name": "Room2",
+      "note": "Note3"
+    }
+  },
+  {
+    "id": 22,
+    "created": "2018-09-29T09:30:17Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    },
+    "patient": {
+      "id": 8,
+      "cardId": 48672446,
+      "socialSecurityNumber": "930904/5619",
+      "firstName": "Nicklas",
+      "middleName": "Jan",
+      "lastName": "Anders",
+      "birthDate": "05.03.2010 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 8,
+        "hwKey": 2154,
+        "name": "TAG08",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T18:00:00Z"
+      }
+    },
+    "room": {
+      "id": 2,
+      "name": "Room1",
+      "note": "Note2"
+    }
+  },
+  {
+    "id": 24,
+    "created": "2018-09-29T09:30:19Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    },
+    "patient": {
+      "id": 10,
+      "cardId": 486134884,
+      "socialSecurityNumber": "985824/6409",
+      "firstName": "Andrej",
+      "middleName": "",
+      "lastName": "Pasi",
+      "birthDate": "05.03.2012 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 10,
+        "hwKey": 5468,
+        "name": "TAG10",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T16:00:00Z"
+      }
+    },
+    "room": {
+      "id": 1,
+      "name": "Lobby",
+      "note": "Note1"
+    }
+  }
+]
+2019-02-06 21:03:36.7788|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:36.8048|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:37.2519|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:37.2519|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:38.1718|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 5,
+    "cardId": 48689999,
+    "socialSecurityNumber": "916215/3770",
+    "firstName": "Mikael",
+    "middleName": "Rikard",
+    "lastName": "Henric",
+    "birthDate": "05.03.2007 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    }
+  },
+  {
+    "id": 7,
+    "cardId": 1615646,
+    "socialSecurityNumber": "916215/3772",
+    "firstName": "Stefan",
+    "middleName": "Mikael",
+    "lastName": "Patrik",
+    "birthDate": "05.03.2009 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 3,
+      "hwKey": 6413,
+      "name": "TAG03",
+      "note": "not working",
+      "battery": 0,
+      "lastSeen": "2018-01-01T20:00:00Z"
+    }
+  },
+  {
+    "id": 8,
+    "cardId": 48672446,
+    "socialSecurityNumber": "930904/5619",
+    "firstName": "Nicklas",
+    "middleName": "Jan",
+    "lastName": "Anders",
+    "birthDate": "05.03.2010 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    }
+  },
+  {
+    "id": 10,
+    "cardId": 486134884,
+    "socialSecurityNumber": "985824/6409",
+    "firstName": "Andrej",
+    "middleName": "",
+    "lastName": "Pasi",
+    "birthDate": "05.03.2012 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    }
+  },
+  {
+    "id": 11,
+    "cardId": 484864684,
+    "socialSecurityNumber": "985824/6409",
+    "firstName": "Andrej",
+    "middleName": "",
+    "lastName": "Evzen",
+    "birthDate": "05.03.2008 0:00:00",
+    "deleted": null,
+    "tag": {
+      "id": 11,
+      "hwKey": 6974,
+      "name": "TAG11",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T15:00:00Z"
+    }
+  },
+  {
+    "id": 12,
+    "cardId": 521313,
+    "socialSecurityNumber": "985111/6119",
+    "firstName": "Oida",
+    "middleName": "",
+    "lastName": "Hojta",
+    "birthDate": "05.12.1988 0:00:00",
+    "deleted": null,
+    "tag": null
+  },
+  {
+    "id": 15,
+    "cardId": 121212,
+    "socialSecurityNumber": "",
+    "firstName": "",
+    "middleName": "",
+    "lastName": "",
+    "birthDate": "01.01.0001 0:00:00",
+    "deleted": null,
+    "tag": null
+  }
+]
+2019-02-06 21:03:38.6688|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:38.7788|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:39.2118|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 19,
+    "created": "2018-09-29T09:30:13Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 5,
+      "hwKey": 1111,
+      "name": "TAG05",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T20:02:00Z"
+    },
+    "patient": {
+      "id": 5,
+      "cardId": 48689999,
+      "socialSecurityNumber": "916215/3770",
+      "firstName": "Mikael",
+      "middleName": "Rikard",
+      "lastName": "Henric",
+      "birthDate": "05.03.2007 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 5,
+        "hwKey": 1111,
+        "name": "TAG05",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T20:02:00Z"
+      }
+    },
+    "room": {
+      "id": 3,
+      "name": "Room2",
+      "note": "Note3"
+    }
+  },
+  {
+    "id": 22,
+    "created": "2018-09-29T09:30:17Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 8,
+      "hwKey": 2154,
+      "name": "TAG08",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T18:00:00Z"
+    },
+    "patient": {
+      "id": 8,
+      "cardId": 48672446,
+      "socialSecurityNumber": "930904/5619",
+      "firstName": "Nicklas",
+      "middleName": "Jan",
+      "lastName": "Anders",
+      "birthDate": "05.03.2010 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 8,
+        "hwKey": 2154,
+        "name": "TAG08",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T18:00:00Z"
+      }
+    },
+    "room": {
+      "id": 2,
+      "name": "Room1",
+      "note": "Note2"
+    }
+  },
+  {
+    "id": 24,
+    "created": "2018-09-29T09:30:19Z",
+    "modified": "0001-01-01T00:00:00",
+    "tag": {
+      "id": 10,
+      "hwKey": 5468,
+      "name": "TAG10",
+      "note": null,
+      "battery": 1,
+      "lastSeen": "2018-01-24T16:00:00Z"
+    },
+    "patient": {
+      "id": 10,
+      "cardId": 486134884,
+      "socialSecurityNumber": "985824/6409",
+      "firstName": "Andrej",
+      "middleName": "",
+      "lastName": "Pasi",
+      "birthDate": "05.03.2012 0:00:00",
+      "deleted": null,
+      "tag": {
+        "id": 10,
+        "hwKey": 5468,
+        "name": "TAG10",
+        "note": null,
+        "battery": 1,
+        "lastSeen": "2018-01-24T16:00:00Z"
+      }
+    },
+    "room": {
+      "id": 1,
+      "name": "Lobby",
+      "note": "Note1"
+    }
+  }
+]
+2019-02-06 21:03:45.7141|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:45.7621|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:55.4793|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:03:55.5133|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:04:46.5612|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-02-06 21:04:46.6028|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate

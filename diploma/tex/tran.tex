@@ -1,0 +1,245 @@
+% Nejprve uvedeme tridu dokumentu s volbami
+\documentclass[czech,master,public,dept450,male,oneside, hidelinks]{diploma}
+% Dalsi doplnujici baliky maker
+\usepackage{subfig}		% makra pro "podobrazky" a "podtabulky"
+\usepackage{tikz}		% makra pro kresleni
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+
+\lstset{
+	numbers=left,
+	stepnumber=1,    
+	firstnumber=1,
+	numberfirstline=true
+}
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+\lstdefinelanguage{json}{
+	basicstyle=\normalfont\ttfamily,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	numbersep=8pt,
+	showstringspaces=false,
+	breaklines=true,
+	frame=lines,
+	backgroundcolor=\color{background},
+	literate=
+	*{0}{{{\color{numb}0}}}{1}
+	{1}{{{\color{numb}1}}}{1}
+	{2}{{{\color{numb}2}}}{1}
+	{3}{{{\color{numb}3}}}{1}
+	{4}{{{\color{numb}4}}}{1}
+	{5}{{{\color{numb}5}}}{1}
+	{6}{{{\color{numb}6}}}{1}
+	{7}{{{\color{numb}7}}}{1}
+	{8}{{{\color{numb}8}}}{1}
+	{9}{{{\color{numb}9}}}{1}
+	{:}{{{\color{punct}{:}}}}{1}
+	{,}{{{\color{punct}{,}}}}{1}
+	{\{}{{{\color{delim}{\{}}}}{1}
+	{\}}{{{\color{delim}{\}}}}}{1}
+	{[}{{{\color{delim}{[}}}}{1}
+	{]}{{{\color{delim}{]}}}}{1},
+}
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=[Sharp]C,
+	captionpos=b,
+	%numbers=left, %Nummerierung
+	%numberstyle=\tiny, % kleine Zeilennummern
+	frame=lines, % Oberhalb und unterhalb des Listings ist eine Linie
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	escapeinside={(*@}{@*)},
+	%commentstyle=\color{greencomments},
+	morekeywords={partial, var, value, get, set},
+	keywordstyle=\color{blue},
+	%stringstyle=\color{redstrings},
+	basicstyle=\ttfamily\small,
+}
+
+\newcommand{\myparagraph}[1]{{
+		\vspace{3pt} 
+		\bf #1}
+	\vspace{3pt}}
+
+\ThesisAuthor{Tran Hoang An}
+
+\CzechThesisTitle{Návrh a realizace sesterské aplikace pro RTLS urgentního příjmu~Fakultní nemocnice Ostrava}
+
+\EnglishThesisTitle{Design and Implementation of RTLS Application for Nurses for Emergency}
+
+\SubmissionDate{1. dubna 2018}
+
+\ThesisAssignmentImagePath{assignment/assignment}
+
+% Poděkování
+\Thanks{Tímto bych chtěl poděkovat vedoucímu diplomové práce panu Ing. Jaromírovi Konečnému, Ph.D. za jeho vedení a rady. Také děkuji naší studijní skupině, bez které bych magisterské studium nezvládl.
+	
+	Rád bych poděkoval také své přítelkyni Marušce za její neutuchající podporu nejen během studia, rodině a mému psovi Beníškovi za podporu při tvorbě této diplomové práce, a to především vytvořením pohodlné atmosféry při práci.}
+
+% Abstract + keywords
+\CzechAbstract{
+	
+	Tato diplomová práce se zabývá analýzou, návrhem a implementací webové aplikace na urgentním příjmu Fakultní nemocnice Ostrava. Zmíněná webová aplikace slouží jako měřící nástroj personálu urgentního příjmu pro správu RTLS systému. Práce popisuje vybrané webové klientské a serverové technologie. Detailněji je také popsán princip fungování technologií, které byly použity v praktické části diplomové práce. Další kapitolou je vlastní návrh řešení, kde je popsána analýza současné situace a popis řešení. Tyto kapitoly pojednávají o nynější situaci a identifikaci problému. Poté je popsán průběh tvorby softwarového řešení na základě zpracovaných analýz. Poslední části práce obsahují popis testování, nasazení do produkce, nástroje, které byly použity během vývoje a retrospektivní zhodnocení z pohledu autora. V závěru jsou poté konfrontovány výsledky této práce.}
+
+\CzechKeywords{RTLS, C\#, ReactJS, WebAPI, lokalizace}
+
+\EnglishAbstract{
+	
+	This diploma thesis is about analysis, design and implementation of web application on Emergency of Faculty Hospital of Ostrava. The purpose of this web application is measuring instrument for personal hospital of RTLS system. This thesis describes choosen web client and server technologies. The technologies which were actually used in the practical part are described more detaily. Next part analysing the current situation and description of implemented solution. This part dedicated for analysing of the current situation and indentification of the issues. The last part of this thesis contains the test phase, deploy phase, the tools which where used and retrospective evaluation from the author's view. Follows by conclusion where the results are confronted.}
+
+\EnglishKeywords{RTLS, C\#, ReactJS, WebAPI, localization}
+
+\AddAcronym{API}{Application Programming Interface}
+\AddAcronym{CA}{Certificate Authority}
+\AddAcronym{CSS}{Cascade Style Sheet}
+\AddAcronym{DI}{Domain Driven Design}
+\AddAcronym{DI}{Dependency Injection}
+\AddAcronym{DNS}{Domain Name Server}
+\AddAcronym{DOM}{Document Object Model}
+\AddAcronym{DTD}{Document Type Definition}
+\AddAcronym{DTO}{Data Transfer Object}
+\AddAcronym{ECMA}{European Computer Manufacturers Association}
+\AddAcronym{FNO}{Fakultní nemocnice Ostrava}
+\AddAcronym{HTTP/S}{HyperText Transfer Protocol / Secured}
+\AddAcronym{HQL}{Hibernate Query Language}
+\AddAcronym{IDE}{Integrated Development Environment}
+\AddAcronym{IIS}{Internet Information Services}
+\AddAcronym{IMAP}{Internet Message Access Protocol}
+\AddAcronym{JS}{JavaScript}
+\AddAcronym{JSON}{JavaScripObjectNotation}
+\AddAcronym{JSX}{Java Serialization to XML}
+\AddAcronym{MVC}{Model View Controller}
+\AddAcronym{NPM}{Node Package Manager}
+\AddAcronym{OOP}{Object Oriented Programming}
+\AddAcronym{ORM}{Object Relational Mapping}
+\AddAcronym{POP3}{Post Office Protocol}
+\AddAcronym{RSA}{Rivest–Shamir–Adleman}
+\AddAcronym{RTLS}{Real Time Location System}
+\AddAcronym{SMTP}{Simple Mail Transfer Protocol}
+\AddAcronym{TCP}{Transmission Control Protocol}
+\AddAcronym{UC}{Use Case}
+\AddAcronym{UML}{Unified Modeling Language}
+\AddAcronym{XML}{eXtensive Markup Language}
+\AddAcronym{XSD}{XML Schema Definition}
+\AddAcronym{WWW}{World Wide Web}
+
+\addtolength{\headsep}{1cm}
+
+\fancyhead[L]{} % predefined ()
+\fancyhead[R]{\bfseries \leftmark} % 1. sectionname
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}	%tloustka linky v zahlavi
+\renewcommand{\footrulewidth}{0pt}		%tloustka linky v zapati
+
+% Zacatek dokumentu
+\begin{document}
+	
+	% Nechame vysazet titulni strany.
+	\pagenumbering{gobble}
+	\MakeTitlePages
+	
+	% Pokud mame v zaverecne praci vypisy kodu, jinak odstranit.
+	%\lstlistoflistings
+	\lstlistoflistings
+	\cleardoublepage
+	
+	\pagenumbering{arabic}
+	
+	\setcounter{page}{14}	%číslování od úvodu
+	\pagestyle{fancy}	
+	
+	\include{Chapter03/chapter03}
+	
+	\renewcommand{\refname}{Použitá literatura}
+	\renewcommand{\bibname}{Použitá literatura}
+	\include{MoreSources/bibliography}	
+	
+	%\include{Appendix/appendix}	
+	\appendix
+	\label{appendix}
+	\section{Grafický návrh uživatelského rozhraní 1.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/Home.pdf}
+		\caption{Grafický návrh uživatelského rozhraní 1.}
+	\end{figure}
+	
+	\section{Grafický návrh uživatelského rozhraní 2.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/Login.pdf}
+		\caption{Grafický návrh uživatelského rozhraní 2.}
+	\end{figure}
+	
+	\section{Grafický návrh uživatelského rozhraní 3.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/Tags.pdf}
+		\caption{Grafický návrh uživatelského rozhraní 3.}
+	\end{figure}
+	
+	\section{Grafický návrh uživatelského rozhraní 4.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/Patients.pdf}
+		\caption{Grafický návrh uživatelského rozhraní 4.}
+	\end{figure}
+	
+	\section{Přihlašovací okno aplikace.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/LoginScreen.jpg}
+		\caption{Přihlašovací okno aplikace.}
+	\end{figure}
+	
+	\section{Hlavní okno aplikace.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/PatientsScreen.jpg}
+		\caption{Hlavní okno aplikace.}
+	\end{figure}
+
+	\section{Okno registrace nového pacienta aplikace.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/NewPatientScreen.jpg}
+		\caption{Okno registrace nového pacienta aplikace.}
+	\end{figure}
+	
+	\section{Nápověda v hlavním okně aplikace.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/Help1Screen.jpg}
+		\caption{Nápověda v hlavním okně aplikace.}
+	\end{figure}
+		
+	\section{Nápověda v okně registrace nového měření.}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=16cm]{Appendix/src/Help2Screen.jpg}
+		\caption{Nápověda v okně registrace nového měření.}
+	\end{figure}
+
+	\section{Diagram tvorby pacienta.}
+	\begin{sidewaysfigure}
+		\includegraphics[width=21cm]{Appendix/src/createPatient.pdf}
+		\caption{Diagram tvorby pacienta.}
+	\end{sidewaysfigure}	
+	
+\end{document}

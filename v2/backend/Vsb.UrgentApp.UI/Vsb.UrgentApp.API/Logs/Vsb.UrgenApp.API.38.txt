@@ -1,0 +1,887 @@
+2019-06-10 12:02:16.5377|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:48.4242|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:51.6452|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:51.6932|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|{"name":"admin","password":"admin","showEmail":false}
+2019-06-10 12:03:53.3563|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNTYwMTYxMDMzLCJleHAiOjE1NjAyNDc0MzMsImlhdCI6MTU2MDE2MTAzMywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDoxNDY3IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoxNDY3In0.-fG5JpHr4a4g6l6bQ8j7oMp0uic19sHhSLL1kHpR3Rk"
+2019-06-10 12:03:53.4962|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:53.5522|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:53.8912|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:03:53.9192|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:53.9582|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.0762|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:03:54.1352|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.1703|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.2562|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 9,
+    "hwKey": 2251,
+    "name": "HW Tag 203",
+    "note": "Tag 203",
+    "battery": 1,
+    "lastSeen": "2019-02-19T15:17:57Z"
+  },
+  {
+    "id": 10,
+    "hwKey": 2249,
+    "name": "HW Tag 201",
+    "note": "Tag 201",
+    "battery": 1,
+    "lastSeen": "2019-02-19T16:03:16Z"
+  },
+  {
+    "id": 11,
+    "hwKey": 2250,
+    "name": "HW Tag 202",
+    "note": "Tag 202",
+    "battery": 1,
+    "lastSeen": "2019-02-19T10:38:53Z"
+  },
+  {
+    "id": 3,
+    "hwKey": 2049,
+    "name": "HW Tag 1",
+    "note": "Tag 1",
+    "battery": 1,
+    "lastSeen": "2019-02-07T13:16:28Z"
+  },
+  {
+    "id": 4,
+    "hwKey": 2050,
+    "name": "HW Tag 2",
+    "note": "Tag 2",
+    "battery": 1,
+    "lastSeen": "2019-02-19T16:03:18Z"
+  },
+  {
+    "id": 7,
+    "hwKey": 2051,
+    "name": "HW Tag 3",
+    "note": "Tag 3",
+    "battery": 1,
+    "lastSeen": "2019-02-20T08:26:43Z"
+  },
+  {
+    "id": 12,
+    "hwKey": 14684,
+    "name": "HW Tag 204",
+    "note": "Tag 204",
+    "battery": 1,
+    "lastSeen": "2019-03-05T08:29:44Z"
+  },
+  {
+    "id": 13,
+    "hwKey": 9,
+    "name": "HW Tag 9",
+    "note": "Tag 9",
+    "battery": 1,
+    "lastSeen": "2019-03-14T14:10:55Z"
+  },
+  {
+    "id": 14,
+    "hwKey": 7,
+    "name": "HW Tag 7",
+    "note": "Tag 7",
+    "battery": 1,
+    "lastSeen": "2019-06-10T09:13:53Z"
+  },
+  {
+    "id": 15,
+    "hwKey": 16,
+    "name": "HW Tag 10",
+    "note": "Tag 10",
+    "battery": 0,
+    "lastSeen": "0001-01-01T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "hwKey": 8,
+    "name": "HW Tag 8",
+    "note": "Tag 8",
+    "battery": 1,
+    "lastSeen": "2019-02-20T12:45:45Z"
+  },
+  {
+    "id": 17,
+    "hwKey": 11,
+    "name": "HW Tag 11",
+    "note": "Tag 11",
+    "battery": 1,
+    "lastSeen": "2019-02-20T13:08:18Z"
+  },
+  {
+    "id": 19,
+    "hwKey": 6,
+    "name": "HW Tag 6",
+    "note": "Tag 6",
+    "battery": 1,
+    "lastSeen": "2019-02-20T12:47:53Z"
+  },
+  {
+    "id": 18,
+    "hwKey": 2,
+    "name": "HW Tag 2",
+    "note": "Tag 2",
+    "battery": 1,
+    "lastSeen": "2019-02-20T12:47:13Z"
+  },
+  {
+    "id": 20,
+    "hwKey": 5,
+    "name": "HW Tag 5",
+    "note": "Tag 5",
+    "battery": 1,
+    "lastSeen": "2019-02-20T12:48:38Z"
+  },
+  {
+    "id": 8,
+    "hwKey": 2052,
+    "name": "HW Tag 4",
+    "note": "Tag 4",
+    "battery": 1,
+    "lastSeen": "2019-03-14T12:31:15Z"
+  }
+]
+2019-06-10 12:03:54.2902|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.4133|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.4958|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:03:54.6859|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.6859|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:54.7818|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:03:54.9428|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:57.6273|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:57.7033|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:57.8693|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:03:58.3183|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:04:00.0588|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:00.7128|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:00.8728|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.0318|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:04:01.1798|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.2289|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.4878|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:04:01.6208|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.6638|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.6928|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:04:01.7578|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.8349|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:01.8938|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:04:27.0749|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:27.1989|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:27.3709|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:27.5949|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:27.8369|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:04:27.8969|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:27.9389|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:27.9999|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:04:28.0419|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:28.1349|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:28.2100|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:04:28.2610|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:28.2951|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:04:28.3480|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:19:45.1358|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:45.2328|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:45.5174|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:45.6814|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:45.9584|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:19:46.0114|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:46.0544|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:46.2454|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:19:46.2744|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:46.3034|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:46.3234|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:19:46.3574|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:46.3804|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:19:46.4224|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:21:54.0547|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.1363|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.5823|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.6593|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.7103|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:21:54.7423|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.7643|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.7953|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:21:54.8543|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.9003|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:54.9183|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:21:54.9553|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:55.0223|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:21:55.1513|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:22:13.3258|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:13.4228|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:13.6358|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:13.7858|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.0018|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:22:14.1548|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.2398|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.2818|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:22:14.3088|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.3623|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.3863|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:22:14.4393|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.4614|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:14.4943|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:22:46.1139|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.1819|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.3544|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.3964|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.4320|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:22:46.4540|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.4740|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.5010|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:22:46.5310|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.5600|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.6110|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:22:46.6430|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.6670|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:22:46.6960|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:24:33.9054|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:33.9824|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:34.9684|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:35.1204|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:35.1734|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:24:35.2084|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:35.2804|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:35.3764|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:24:35.4794|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:35.5624|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:35.6059|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:24:35.8224|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:36.0185|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:24:36.0634|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:25:39.5576|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:41.2986|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:41.5427|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:41.7547|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:43.4732|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:25:43.7442|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:43.8768|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:44.1278|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:25:44.3468|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:44.4468|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:44.6688|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:25:44.8208|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:45.0278|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:25:45.2038|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:26:06.8968|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:08.4398|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:08.5518|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:08.6048|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:09.0758|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:26:09.3388|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:09.7738|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:10.3049|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:26:10.4638|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:10.5748|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:10.7158|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:26:10.7898|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:10.8598|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:26:11.3638|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:27:11.3988|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:11.7548|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.2974|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.3274|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.3574|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:27:14.3894|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.4154|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.4394|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:27:14.4714|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.4994|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.5144|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:27:14.5804|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.6024|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:14.6324|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:27:24.8442|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:25.0692|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.0222|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.0632|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.0902|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:27:26.3252|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.5507|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.5807|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:27:26.7227|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.7907|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.8097|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:27:26.9067|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:26.9797|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:27:27.0237|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:28:31.4237|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:31.8392|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:38.4750|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:38.5120|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:38.5610|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:28:38.6310|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:38.7360|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:38.8620|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:28:39.8661|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:40.3880|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:40.4050|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:28:40.5560|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:40.5930|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:28:40.6240|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:29:28.3586|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:28.5276|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:31.2613|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:31.4943|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:31.6114|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[]
+2019-06-10 12:29:32.1220|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:34.6067|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:34.6437|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]
+2019-06-10 12:29:36.8942|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:37.6563|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:37.6733|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "id": 3,
+    "hwKey": 65343,
+    "name": "Tlaèítko 8",
+    "note": "2 - Odjezd z haly"
+  },
+  {
+    "id": 4,
+    "hwKey": 65407,
+    "name": "Tlaèítko 1",
+    "note": "1 - Pøíjem pacienta"
+  },
+  {
+    "id": 7,
+    "hwKey": 65375,
+    "name": "Tlaèítko 4",
+    "note": "4 - Konec vyšetøení"
+  }
+]
+2019-06-10 12:29:38.4228|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:38.5868|DEBUG|Vsb.UrgentApp.API.WebApiApplication|Before InitializeNHibernate
+2019-06-10 12:29:38.6243|DEBUG|Vsb.UrgentApp.API.LogRequestAndResponseHandler|[
+  {
+    "tagEventNameStart": "1 - Príjem pacienta",
+    "tagEventNameEnd": "4 - Konec vyšetøení",
+    "times": []
+  },
+  {
+    "tagEventNameStart": "4 - Konec vyšetøení",
+    "tagEventNameEnd": "2 - Odjezd z haly",
+    "times": []
+  }
+]

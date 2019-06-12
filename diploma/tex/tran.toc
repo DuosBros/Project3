@@ -1,0 +1,40 @@
+\select@language {slovak}
+\select@language {czech}
+\select@language {czech}
+\select@language {czech}
+\select@language {english}
+\select@language {czech}
+\contentsline {section}{Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek a symbol\IeC {\r u}}{}{Doc-Start}
+\contentsline {section}{Seznam obr\'azk\r {u}}{}{Doc-Start}
+\contentsline {section}{Seznam v\IeC {\'y}pis\IeC {\r u} zdrojov\IeC {\'e}ho k\IeC {\'o}du}{}{Doc-Start}
+\contentsline {section}{\numberline {1}\IeC {\'U}vod}{14}{section.1}
+\contentsline {section}{\numberline {2}Technologie pro tvorbu webov\IeC {\'y}ch aplikac\IeC {\'\i }}{15}{section.2}
+\contentsline {subsection}{\numberline {2.1}Klient-Server}{15}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Zp\IeC {\r u}sob komunikace}{16}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Form\IeC {\'a}ty dat}{19}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Webov\IeC {\'e} technologie}{22}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}HTML \IeC {\textendash } Hypertext Markup Language}{22}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}CSS}{24}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}JavaScript}{26}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}AngularJS}{30}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}ReactJS}{34}{subsubsection.2.2.5}
+\contentsline {subsection}{\numberline {2.3}Technologie serverov\IeC {\'y}ch \IeC {\v c}\IeC {\'a}st\IeC {\'\i } webov\IeC {\'e} aplikace}{39}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}.NET Web API}{39}{subsubsection.2.3.1}
+\contentsline {section}{\numberline {3}Vlastn\IeC {\'\i } n\IeC {\'a}vrh \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{42}{section.3}
+\contentsline {subsection}{\numberline {3.1}Anal\IeC {\'y}za sou\IeC {\v c}asn\IeC {\'e} situace}{42}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Popis \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{44}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Testov\IeC {\'a}n\IeC {\'\i }, nasazen\IeC {\'\i } a~zp\IeC {\v e}tn\IeC {\'a} vazba}{58}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}N\IeC {\'a}stroje}{61}{subsection.3.4}
+\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{63}{section.4}
+\contentsline {section}{Pou\IeC {\v z}it\IeC {\'a} literatura}{64}{section.4}
+\contentsline {section}{P\IeC {\v r}\IeC {\'\i }lohy}{66}{section.4}
+\contentsline {section}{\numberline {A}Grafick\IeC {\'y} n\IeC {\'a}vrh u\IeC {\v z}ivatelsk\IeC {\'e}ho rozhran\IeC {\'\i } 1.}{66}{appendix.A}
+\contentsline {section}{\numberline {B}Grafick\IeC {\'y} n\IeC {\'a}vrh u\IeC {\v z}ivatelsk\IeC {\'e}ho rozhran\IeC {\'\i } 2.}{67}{appendix.B}
+\contentsline {section}{\numberline {C}Grafick\IeC {\'y} n\IeC {\'a}vrh u\IeC {\v z}ivatelsk\IeC {\'e}ho rozhran\IeC {\'\i } 3.}{68}{appendix.C}
+\contentsline {section}{\numberline {D}Grafick\IeC {\'y} n\IeC {\'a}vrh u\IeC {\v z}ivatelsk\IeC {\'e}ho rozhran\IeC {\'\i } 4.}{69}{appendix.D}
+\contentsline {section}{\numberline {E}P\IeC {\v r}ihla\IeC {\v s}ovac\IeC {\'\i } okno aplikace.}{70}{appendix.E}
+\contentsline {section}{\numberline {F}Hlavn\IeC {\'\i } okno aplikace.}{70}{appendix.F}
+\contentsline {section}{\numberline {G}Okno registrace nov\IeC {\'e}ho pacienta aplikace.}{71}{appendix.G}
+\contentsline {section}{\numberline {H}N\IeC {\'a}pov\IeC {\v e}da v hlavn\IeC {\'\i }m okn\IeC {\v e} aplikace.}{71}{appendix.H}
+\contentsline {section}{\numberline {I}N\IeC {\'a}pov\IeC {\v e}da v okn\IeC {\v e} registrace nov\IeC {\'e}ho m\IeC {\v e}\IeC {\v r}en\IeC {\'\i }.}{72}{appendix.I}
+\contentsline {section}{\numberline {J}Diagram tvorby pacienta.}{72}{appendix.J}
