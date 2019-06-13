@@ -462,8 +462,7 @@ class PatientCreate extends React.Component {
                                     <Button className='sav' onClick={() => this.handleSavePatient()} fluid style={{ backgroundColor: '#efe1ba', color: 'black', marginBottom: '0.6em' }} content='Vytvořit'
                                         disabled={
                                             (!validateCardId(this.state.cardId) || !(this.state.currentButtonSelected || this.state.pastButtonSelected)
-                                                || (this.state.pastButtonSelected && mappedPatientTagEvents.length < 1) || (this.state.currentButtonSelected && isEmpty(this.state.selectedTag))
-                                                || !validateSocialSecurityNumber(this.state.socialSecurityNumber))
+                                                || (this.state.pastButtonSelected && mappedPatientTagEvents.length < 1) || (this.state.currentButtonSelected && isEmpty(this.state.selectedTag)))
                                         } />
                                     <Button onClick={() => browserHistory.push('/patients')} fluid style={{ backgroundColor: '#9a3334', color: 'white' }} content='Zpět' />
                                 </Form>

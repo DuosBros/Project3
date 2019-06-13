@@ -247,7 +247,7 @@ class PatientEdit extends React.Component {
                                         options={{ locale: 'cs', dateFormat: 'd.m.Y' }}
                                     />
                                 </Form.Field>
-                                <Button disabled={!validateCardId(this.state.cardId) || validateSocialSecurityNumber(this.state.socialSecurityNumber)} onClick={() => this.handleSavePatient()} fluid style={{ backgroundColor: '#efe1ba', color: 'black', marginBottom: '0.6em' }} content='Uložit' />
+                                <Button disabled={!validateCardId(this.state.cardId)} onClick={() => this.handleSavePatient()} fluid style={{ backgroundColor: '#efe1ba', color: 'black', marginBottom: '0.6em' }} content='Uložit' />
                                 <Button onClick={() => browserHistory.push('/patients')} fluid style={{ backgroundColor: '#9a3334', color: 'white' }} content='Zpět' />
                             </Form>
                         </Segment>
