@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Grid, Button, Modal, Table, Dropdown, Image, Message } from 'semantic-ui-react';
+import { Header, Grid, Button, Modal, Table, Dropdown, Image, Message, Icon, Popup } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { browserHistory } from 'react-router';
@@ -22,6 +22,7 @@ import { GetPatientTimeLine } from './options/PatientTimeLine';
 import { GetPatientTimeLinePie } from './options/PatientTimePie';
 import { GetLocationTimeLine } from './options/LocationTimeLine';
 import { GetPatientHoursAndDaysLine } from './options/PatientHoursAndDays';
+import echarts from 'echarts'
 
 
 class Graph2 extends React.Component {
@@ -154,6 +155,30 @@ class Graph2 extends React.Component {
             })
     }
 
+    handleExport = () => {
+        debugger
+        var chart = document.getElementById('1');
+        var myChart = echarts.init(chart);
+
+        var pica = myChart.getConnectedDataURL({
+            type: 'png',
+            pixelRatio: 1,
+            backgroundColor: '#fff'
+        });
+
+        var download = document.createElement('a');
+        download.target = '_blank';
+        download.href = pica;
+        download.download = "pica.png";
+
+        var evt = new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: false
+        });
+        download.dispatchEvent(evt);
+    }
+
     render() {
 
         const tagEventTimeGraphStyle = {
@@ -201,6 +226,8 @@ class Graph2 extends React.Component {
             )
         })
 
+
+
         if (this.props.loginStore.loggedIn) {
             return (
                 this.props.graphStore.getTagEventTypeBoxplotDone && this.props.graphStore.loadGraphDataDone ? (
@@ -226,22 +253,22 @@ class Graph2 extends React.Component {
                             </Header>
                         </Grid.Row>
                         {this.props.graphStore.patientHoursAndDays && (
-                                <Grid.Row style={{ minHeight: '20em' }}>
-                                    <div style={tagEventTimeGraphStyle}>
-                                        <IEcharts
-                                            resizable
-                                            option={GetPatientHoursAndDaysLine(this.props.graphStore.patientHoursAndDays.hours, "hour")} />
-                                    </div>
-                                </Grid.Row>
+                            <Grid.Row style={{ minHeight: '20em' }}>
+                                <div style={tagEventTimeGraphStyle}>
+                                    <IEcharts
+                                        resizable
+                                        option={GetPatientHoursAndDaysLine(this.props.graphStore.patientHoursAndDays.hours, "hour")} />
+                                </div>
+                            </Grid.Row>
                         )}
                         {this.props.graphStore.patientHoursAndDays && (
-                                <Grid.Row style={{ minHeight: '20em' }}>
-                                    <div style={tagEventTimeGraphStyle}>
-                                        <IEcharts
-                                            resizable
-                                            option={GetPatientHoursAndDaysLine(this.props.graphStore.patientHoursAndDays.days, "day")} />
-                                    </div>
-                                </Grid.Row>
+                            <Grid.Row style={{ minHeight: '20em' }}>
+                                <div style={tagEventTimeGraphStyle}>
+                                    <IEcharts
+                                        resizable
+                                        option={GetPatientHoursAndDaysLine(this.props.graphStore.patientHoursAndDays.days, "day")} />
+                                </div>
+                            </Grid.Row>
                         )}
                         <Grid.Row>
                             <Header as='h2' dividing>

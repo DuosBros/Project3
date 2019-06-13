@@ -142,20 +142,20 @@ namespace Vsb.UrgentApp.API.Controllers
         {
             var patients = GetSuitablePatients();
 
-            var groupedHours = patients.GroupBy(x => x.Created.Hour).Select(group => new
+            var groupedHours = patients.GroupBy(x => x.Created.ToLocalTime().Hour).Select(group => new
             {
                 Hour = group.Key,
                 Count = group.Count()
             }).ToList();
 
-            var groupedDays = patients.GroupBy(x => x.Created.DayOfWeek).Select(group => new
+            var groupedDays = patients.GroupBy(x => x.Created.ToLocalTime().DayOfWeek).Select(group => new
             {
                 Day = group.Key,
                 Count = group.Count()
             }).ToList();
 
             var hours = Enumerable.Range(0, 24);
-         
+
 
             List<object> temp = new List<object>();
             foreach (var day in System.Enum.GetValues(typeof(System.DayOfWeek)).Cast<System.DayOfWeek>())

@@ -1,4 +1,17 @@
+export function saveAsJSON(data) {
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
 
+    let json = JSON.stringify(data)
+    let fileName = new Date().toISOString();
+    let blob = new Blob([json], { type: "octet/stream" })
+    let url = window.URL.createObjectURL(blob);
+    a.href = url;
+    a.download = fileName + ".json";
+    a.click();
+    window.URL.revokeObjectURL(url);
+}
 
 export function addSelectedProperty(input) {
     return input.map(element => {
@@ -30,8 +43,8 @@ export const isNum = (cardId) => {
 }
 
 export const isEmpty = (obj) => {
-    for(var key in obj) {
-        if(obj.hasOwnProperty(key))
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key))
             return false;
     }
     return true;
@@ -40,8 +53,8 @@ export const isEmpty = (obj) => {
 export const findItemById = (array, itemId) => {
     var result = -1
 
-    for(let i = 0; i < array.length; i++) {
-        if(array[i].id === itemId) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].id === itemId) {
             result = i;
             break;
         }
