@@ -172,7 +172,7 @@ class PatientEdit extends React.Component {
                 <Table.Row textAlign='center' key={tagEvent.id}>
                     <Table.Cell>
                         {
-                            moment(tagEvent.modified).local().format("DD.MM.YYYY HH:mm:ss").toString()
+                            moment(tagEvent.created).local().format("DD.MM.YYYY HH:mm:ss").toString()
                         }</Table.Cell>
                     <Table.Cell>{tagEvent.tagEventType.note}</Table.Cell>
                     <Table.Cell>{tagEvent.tag.name}</Table.Cell>
