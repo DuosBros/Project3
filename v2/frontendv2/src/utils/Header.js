@@ -1,10 +1,11 @@
 import React from 'react';
 import { Menu, Segment, Container, Icon } from 'semantic-ui-react'
-import {browserHistory} from 'react-router';
+import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { bindActionCreators } from 'redux';
+import { version } from '../appConfig';
 
-import {loginFailedAction} from '../pages/login/LoginAction';
+import { loginFailedAction } from '../pages/login/LoginAction';
 
 class Header extends React.Component {
     constructor(props) {
@@ -12,9 +13,9 @@ class Header extends React.Component {
 
         this.logout = this.logout.bind(this);
 
-        var currentPath = browserHistory.getCurrentLocation().pathname.replace("/","");
+        var currentPath = browserHistory.getCurrentLocation().pathname.replace("/", "");
 
-        if(currentPath !== 'patients' && currentPath !== 'graphs') {
+        if (currentPath !== 'patients' && currentPath !== 'graphs') {
             currentPath = 'patients'
         }
         this.state = {
@@ -23,31 +24,30 @@ class Header extends React.Component {
     }
 
     componentDidMount() {
-        var currentPath = browserHistory.getCurrentLocation().pathname.replace("/","");
+        var currentPath = browserHistory.getCurrentLocation().pathname.replace("/", "");
 
-        if(currentPath !== 'patients' && currentPath !== 'graphs') {
+        if (currentPath !== 'patients' && currentPath !== 'graphs') {
             currentPath = 'patients'
         }
 
         this.setState({ activeItem: currentPath })
     }
 
-    handleItemClick = (e, { name }) =>
-    {
-        if(name !== 'FNO - Urgent') {
+    handleItemClick = (e, { name }) => {
+        if (name !== 'FNO - Urgent') {
             this.setState({ activeItem: name })
         }
 
-        if(name === 'FNO - Urgent') {
+        if (name === 'FNO - Urgent') {
             browserHistory.push('/patients');
             window.location.reload()
         }
 
-        if(name === 'patients') {
+        if (name === 'patients') {
             browserHistory.push('/patients');
         }
 
-        if(name === 'graphs') {
+        if (name === 'graphs') {
             browserHistory.push('/graphs');
             window.location.reload()
         }
@@ -63,38 +63,27 @@ class Header extends React.Component {
     render() {
         const { activeItem } = this.state
         return (
-            <Segment style={{backgroundColor: '#006bab',color:'white'}}>
+            <Segment style={{ backgroundColor: '#006bab', color: 'white' }}>
                 <Container>
-                    <Menu style={{ borderBottom: '0px'}} pointing secondary size='huge'>
-                        <Menu.Item  style={{color:'white'}} name='FNO - Urgent' onClick={this.handleItemClick} />
-                        <Menu.Item style={{color:'white',borderColor: activeItem === 'patients' ? 'white': 'transparent'}} className='patients' name='patients' active={activeItem === 'patients'} onClick={this.handleItemClick}>Pacienti</Menu.Item>
+                    <Menu style={{ borderBottom: '0px' }} pointing secondary size='huge'>
+                        <Menu.Item style={{ color: 'white' }} name='FNO - Urgent' onClick={this.handleItemClick} />
+                        <Menu.Item style={{ color: 'white', borderColor: activeItem === 'patients' ? 'white' : 'transparent' }} className='patients' name='patients' active={activeItem === 'patients'} onClick={this.handleItemClick}>Pacienti</Menu.Item>
                         <Menu.Item
-                        style={{color:'white',borderColor:activeItem === 'graphs' ? 'white': 'transparent'}}
+                            style={{ color: 'white', borderColor: activeItem === 'graphs' ? 'white' : 'transparent' }}
                             className='reports'
                             name='graphs'
                             active={activeItem === 'graphs'}
                             onClick={this.handleItemClick}
                         >Grafy</Menu.Item>
                         <Menu.Menu position='right'>
-                            {/* <Dropdown item text={<Icon name='settings'/>}>
-                                <Dropdown.Menu>
-                                <Dropdown.Item>
-                                    <Dropdown text='Změna schématu'>
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item>Světlá</Dropdown.Item>
-                                        <Dropdown.Item>Tmavá</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                    </Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown> */}
+                            <Menu.Item style={{ color: 'white' }}>Verze: {version}</Menu.Item>
                             <Menu.Item
-                            style={{color:'white'}}
+                                style={{ color: 'white' }}
                                 className='logout'
                                 name='logout'
                                 active={activeItem === 'logout'}
                                 onClick={() => this.logout()}>
-                                Odhlášení <Icon name='log out' style={{marginLeft:'0.5em'}}/>
+                                Odhlášení <Icon name='log out' style={{ marginLeft: '0.5em' }} />
                             </Menu.Item>
                         </Menu.Menu>
                     </Menu>
@@ -108,11 +97,11 @@ function mapStateToProps(state) {
     return {
         loginPageStore: state.LoginReducer
     };
-  }
+}
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
-        loginFailedAction : loginFailedAction
+        loginFailedAction: loginFailedAction
     }, dispatch);
 }
 

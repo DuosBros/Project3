@@ -26,6 +26,9 @@ const HomeReducer = (state = homePageInitialState, action) => {
                 action.payload.data.forEach(x => {
                     x.room = {}
                     x.room.name = "fetching"
+                    if (!Array.isArray(x.tagEvents)) {
+                        x.tagEvents = "fetching"
+                    }
                 })
             }
             return Object.assign({}, state, { activePatients: action.payload })

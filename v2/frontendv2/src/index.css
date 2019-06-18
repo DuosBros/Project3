@@ -12,3 +12,21 @@ html, body {
 }
 
 
+@media only screen and (min-width: 1450px) {
+    .ui.container {
+      width: 1350px;
+    }
+
+    .ui.grid.container {
+      width: calc( 1350px  +  2rem ) !important;
+    }
+
+    .ui.relaxed.grid.container {
+      width: calc( 1350px  +  3rem ) !important;
+    }
+
+    .ui.very.relaxed.grid.container {
+      width: calc( 1350px  +  5rem ) !important;
+    }
+  }
+

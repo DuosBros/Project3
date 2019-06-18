@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { bindActionCreators } from 'redux';
 
 import Header from './Header';
 import Footer from './Footer';
-import {loginFailedAction, loginSuccessAction} from '../pages/login/LoginAction';
+import { loginFailedAction, loginSuccessAction } from '../pages/login/LoginAction';
 import { Container } from 'semantic-ui-react';
 
 class Layout extends React.Component {
@@ -31,23 +31,23 @@ class Layout extends React.Component {
         // })
     }
 
-    componentWillMount(){
-        if(this.state.minHeight < window.innerHeight) {
-            var res = window.innerHeight-50
-            this.setState({minHeight: res});
+    componentWillMount() {
+        if (this.state.minHeight < window.innerHeight) {
+            var res = window.innerHeight - 50
+            this.setState({ minHeight: res });
         }
     }
 
     render() {
         return (
-        <div>
-            <Header/>
+            <>
+                <Header />
                 {/* <div className="container" ></div> */}
-                <Container fluid style={{minHeight:this.state.minHeight + 'px'}}>
+                <Container style={{ minHeight: this.state.minHeight + 'px' }}>
                     {this.props.children}
                 </Container>
-            <Footer className="footer"/>
-        </div>
+                <Footer className="footer" />
+            </>
         );
     }
 }
@@ -56,12 +56,12 @@ function mapStateToProps(state) {
     return {
         loginPageStore: state.LoginReducer
     };
-  }
+}
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
-        loginFailedAction : loginFailedAction,
-        loginSuccessAction : loginSuccessAction
+        loginFailedAction: loginFailedAction,
+        loginSuccessAction: loginSuccessAction
     }, dispatch);
 }
 

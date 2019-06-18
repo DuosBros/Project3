@@ -84,7 +84,7 @@ class Graph2 extends React.Component {
             selectedToTagEventType: {},
             selectedTagEventTypeFromChanged: false,
             selectedTagEventTypeToChanged: false,
-            selectedPatient: {},
+            selectedPatient: null,
             drawLocationTimeLine: false,
             drawPatientTimeLine: false,
             showDeletedPatientsModal: false
@@ -273,7 +273,7 @@ class Graph2 extends React.Component {
                         <Grid.Row>
                             <Header as='h2' dividing>
                                 Statistická analýza specifického pacienta
-                                {this.state.deletedPatient ? (<Header.Subheader>Vykreslován pacient s číslem karty [{this.state.deletedPatient.cardId}]</Header.Subheader>) : (<span></span>)}
+                                {this.state.selectedPatient ? (<Header.Subheader>Vykreslován pacient s číslem karty [{this.state.selectedPatient.cardId}]</Header.Subheader>) : (<span></span>)}
                             </Header>
                         </Grid.Row>
                         <Grid.Row>

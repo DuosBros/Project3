@@ -329,7 +329,10 @@ namespace Vsb.UrgentApp.API.Controllers
 
                     firstOccurenceFound = true;
                     filteredTagLocations.Add(tagLocations[i]);
-
+                    if(tagLocations.Count - 1 == i)
+                    {
+                        break;
+                    }
                     if (tagLocations[i + 1].Created > patientsTagEvents[patientsTagEvents.Count - 1].Created)
                     {
                         filteredTagLocations.Add(tagLocations[i + 1]);

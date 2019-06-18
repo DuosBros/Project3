@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Header, Grid, Button, Icon, Table, Form, Divider, Popup, Image, Modal, Message } from 'semantic-ui-react';
+import { Header, Grid, Button, Icon, Table, Form, Divider, Popup, Image, Modal, Message, Label } from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
 import { browserHistory } from 'react-router';
 import moment from 'moment';
@@ -13,7 +13,7 @@ import {
 } from './HomeAction';
 import { getAllPatients, deletePatient, getPatientsLocations } from './HomeAxios';
 import { loginFailedAction, loginSuccessAction } from '../login/LoginAction';
-import { addSelectedProperty, isNum, isEmpty, addModifiedProperty } from '../../helpers/helpers';
+import { addSelectedProperty, isNum, isEmpty, addModifiedProperty, asyncForEach } from '../../helpers/helpers';
 import { defaultLimitPatients } from '../../appConfig';
 import { checkAuth } from '../login/LoginAxios';
 import { getTagEventsByPatientId, getTagEventsByTagId } from '../common/TagEventAxios';
@@ -167,40 +167,53 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        // this.refreshId = setInterval(() => {
-        //     getAllPatients(false, defaultLimitPatients)
-        //         .then((res, err) => {
-        //             const patients = addSelectedProperty(res.data);
-        //             this.props.fetchActivePatientsAction({ success: true, data: patients });
-        //             return ({ success: true, data: patients });
-        //         })
-        //         .then((res) => {
-        //             if (res.data.length === 0) {
-        //                 return false
-        //             }
+        this.refreshId = setInterval(() => {
+            getAllPatients(false, defaultLimitPatients)
+                .then((res, err) => {
+                    const patients = addSelectedProperty(res.data);
+                    this.props.fetchActivePatientsAction({ success: true, data: patients });
+                    return ({ success: true, data: patients });
+                })
+                .then(async (res) => {
+                    if (res.data.length === 0) {
+                        return res
+                    }
 
-        //             if (res) {
-        //                 var ids = res.data.map(x => x.id);
-        //                 var string = ids.join(",")
-        //                 return getPatientsLocations(string)
-        //             }
-        //         })
-        //         .then((res) => {
-        //             if (res !== false) {
-        //                 this.props.getPatientsLocationsAction({ success: true, data: res.data })
-        //                 return true
-        //             }
-        //             else {
-        //                 return false
-        //             }
-        //         })
-        //         .then(res => {
-        //             if (res) {
-        //                 this.lastUpdate = moment().local().format("HH:mm:ss")
-        //             }
-        //         })
+                    await asyncForEach(res.data, async x => {
+                        let r = await getTagEventsByPatientId(x.id)
+                        x.tagEvents = r.data
+                    })
 
-        // }, 3000);
+                    this.props.fetchActivePatientsAction({ success: true, data: res.data });
+                    return { success: true, data: res.data };
+                })
+                .then((res) => {
+                    if (res.data.length === 0) {
+                        return false
+                    }
+
+                    if (res) {
+                        var ids = res.data.map(x => x.id);
+                        var string = ids.join(",")
+                        return getPatientsLocations(string)
+                    }
+                })
+                .then((res) => {
+                    if (res !== false) {
+                        this.props.getPatientsLocationsAction({ success: true, data: res.data })
+                        return true
+                    }
+                    else {
+                        return false
+                    }
+                })
+                .then(res => {
+                    if (res) {
+                        this.lastUpdate = moment().local().format("HH:mm:ss")
+                    }
+                })
+
+        }, 5000);
     }
 
     componentWillMount() {
@@ -238,6 +251,19 @@ class Home extends React.Component {
                 this.props.toggleSpinnerAction();
                 this.props.fetchActivePatientsAction({ success: false, error: err });
                 return false;
+            })
+            .then(async (res) => {
+                if (res.data.length === 0) {
+                    return res
+                }
+
+                await asyncForEach(res.data, async x => {
+                    let r = await getTagEventsByPatientId(x.id)
+                    x.tagEvents = r.data
+                })
+
+                this.props.fetchActivePatientsAction({ success: true, data: res.data });
+                return { success: true, data: res.data };
             })
             .then((res) => {
                 if (res.data.length === 0) {
@@ -362,8 +388,30 @@ class Home extends React.Component {
         }
 
         const mappedActivePatients = this.props.homePageStore.activePatients.data.map(patient => {
+            let patientTagEventCell;
+            if (patient.tagEvents === "fetching") {
+                patientTagEventCell = (<Icon loading name="spinner" />)
+            }
+            else if (patient.tagEvents.length === 0) {
+                patientTagEventCell = (<Popup trigger={<Icon name="ban" />} content="Pacient nemá žádnou událost" />)
+            }
+            else {
+                let tagEventType = patient.tagEvents.sort((a, b) => new Date(b.created).getTime() - new Date(a.created).getTime())[0].tagEventType
+                if (tagEventType.id === 4) {
+                    patientTagEventCell = <Popup trigger={<Label circular color="olive" empty />} content={tagEventType.note} />
+                }
+
+                if (tagEventType.id === 3) {
+                    patientTagEventCell = <Popup trigger={<Label circular color="red" empty />} content={tagEventType.note} />
+                }
+
+                if (tagEventType.id === 7) {
+                    patientTagEventCell = <Popup trigger={<Label circular color="orange" empty />} content={tagEventType.note} />
+                }
+            }
+
             return (
-                <Table.Row key={patient.id}>
+                <Table.Row key={patient.id} >
                     <Table.Cell>{
                         patient.firstName.length > 10 ? (
                             patient.firstName.substring(0, 10) + '...'
@@ -388,7 +436,10 @@ class Home extends React.Component {
                     <Table.Cell>{patient.cardId}</Table.Cell>
                     <Table.Cell>{patient.birthDate.substring(0, patient.birthDate.indexOf(' '))}</Table.Cell>
                     <Table.Cell>{patient.socialSecurityNumber}</Table.Cell>
-                    <Table.Cell>{patient.room ? (patient.room.name !== "fetching"? patient.room.name  : <Icon loading name="spinner" />) : (<Popup trigger={<Icon name="ban" />} content="Nelze získat lokaci" />)}</Table.Cell>
+                    <Table.Cell>{patient.room ? (patient.room.name !== "fetching" ? patient.room.name : <Icon loading name="spinner" />) : (<Popup trigger={<Icon name="ban" />} content="Nelze získat lokaci" />)}</Table.Cell>
+                    <Table.Cell>
+                        {patientTagEventCell}
+                    </Table.Cell>
                     <Table.Cell>{patient.tag ? patient.tag.name : ''}</Table.Cell>
                     <Table.Cell textAlign='left' >
 
@@ -505,7 +556,7 @@ class Home extends React.Component {
                         initialStep={0}
                         onExit={this.onExit}
                     />
-                    <Grid container style={{ padding: '2em 0em', marginBottom: '-3em' }}>
+                    <Grid stackable container style={{ padding: '2em 0em', marginBottom: '-3em' }}>
                         <Grid.Row>
                             <Grid.Column width={8}>
                                 <Header as='h1'>
@@ -552,7 +603,10 @@ class Home extends React.Component {
                                                 <Table.HeaderCell style={{ backgroundColor: '#80808036' }} width={2}>Lokace
                                                     <Popup trigger={<Icon style={{ marginLeft: '0.5em' }} circular name='question' />} content="Poslední známá lokace" />
                                                 </Table.HeaderCell>
-                                                <Table.HeaderCell style={{ backgroundColor: '#80808036' }} width={2}>Tag</Table.HeaderCell>
+                                                <Table.HeaderCell style={{ backgroundColor: '#80808036' }} width={2}>Událost
+                                                    <Popup trigger={<Icon style={{ marginLeft: '0.5em' }} circular name='question' />} content="Poslední známá událost" />
+                                                </Table.HeaderCell>
+                                                <Table.HeaderCell style={{ backgroundColor: '#80808036' }} width={1}>Tag</Table.HeaderCell>
                                                 <Table.HeaderCell style={{ backgroundColor: '#80808036' }} width={4}>Akce</Table.HeaderCell>
                                             </Table.Row>
                                         </Table.Header>
