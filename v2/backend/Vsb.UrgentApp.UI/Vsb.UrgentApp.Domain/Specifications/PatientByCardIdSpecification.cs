@@ -11,9 +11,9 @@ namespace Vsb.UrgentApp.Domain.Specifications
 {
 	public class PatientByCardIdSpecification : QuerySpecification<Patient>
 	{
-		private readonly long cardID;
+		private readonly string cardID;
 
-		public PatientByCardIdSpecification(long cardID)
+		public PatientByCardIdSpecification(string cardID)
 		{
 			this.cardID = cardID;
 		}

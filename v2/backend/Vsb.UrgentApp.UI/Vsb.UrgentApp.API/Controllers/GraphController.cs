@@ -222,7 +222,7 @@ namespace Vsb.UrgentApp.API.Controllers
 
         [HttpGet]
         [ActionName("timeline")]
-        public List<object> GetTimeLine(int cardId)
+        public List<object> GetTimeLine(string cardId)
         {
             List<object> result = new List<object>();
 
@@ -288,7 +288,7 @@ namespace Vsb.UrgentApp.API.Controllers
 
         [HttpGet]
         [ActionName("location")]
-        public List<object> GetPatientLocationTimes(int cardId)
+        public List<object> GetPatientLocationTimes(string cardId)
         {
             List<object> result = new List<object>();
 
@@ -326,7 +326,7 @@ namespace Vsb.UrgentApp.API.Controllers
                             filteredTagLocations.Add(tagLocations[i - 1]);
                         }
                     }
-
+                        
                     firstOccurenceFound = true;
                     filteredTagLocations.Add(tagLocations[i]);
                     if(tagLocations.Count - 1 == i)

@@ -12,7 +12,7 @@ namespace Vsb.UrgentApp.Tasks.Patient
     {
         public int Id { get; set; }
 
-        public long CardId { get; set; }
+        public string CardId { get; set; }
 
         public string SocialSecurityNumber { get; set; }
 

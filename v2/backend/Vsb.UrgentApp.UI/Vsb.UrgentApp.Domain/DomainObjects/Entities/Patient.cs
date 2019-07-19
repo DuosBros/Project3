@@ -10,7 +10,7 @@ namespace Vsb.UrgentApp.Domain.DomainObjects.Entities
 {
 	public class Patient : Entity
 	{
-		public virtual long Card_Id { get; set; }
+		public virtual string Card_Id { get; set; }
 
 		public virtual string SocialSecurityNumber { get; set; }
 

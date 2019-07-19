@@ -87,7 +87,7 @@ namespace Vsb.UrgentApp.Tasks.Patient
             return result;
         }
 
-        public PatientDto GetByCardId(int cardId)
+        public PatientDto GetByCardId(string cardId)
         {
             PatientDto result = new PatientDto();
 

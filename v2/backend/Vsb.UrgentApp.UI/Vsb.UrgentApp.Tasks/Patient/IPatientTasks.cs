@@ -18,6 +18,6 @@ namespace Vsb.UrgentApp.Tasks.Patient
 
 		void Delete(int id);
 
-	    PatientDto GetByCardId(int cardId);
+	    PatientDto GetByCardId(string cardId);
 	}
 }

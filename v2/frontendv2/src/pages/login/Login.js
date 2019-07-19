@@ -126,13 +126,13 @@ class Login extends React.Component {
         else {
             return (
                 <div className='login-form'>
-                    <style>{`
+                    {/* <style>{`
                     body > div,
                     body > div > div,
                     body > div > div > div.login-form {
                         height: 100%;
                     }
-                    `}</style>
+                    `}</style> */}
                     <Grid columns={3} stackable>
                         <Grid.Column width='4'></Grid.Column>
                         <Grid.Column width='8'>
